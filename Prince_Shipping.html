@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prince Shipping</title>
+</head>
+<style type="text/css">
+	/*Reset CSS Start*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-family:  sans-serif;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	/*Reset CSS end*/
+
+	/*Grid*/
+	.grid-container {
+	        width : 100%;
+	        max-width : 1200px; 
+	    }
+    /*-- our cleafix hack -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+
+    [class*='col-'] {
+        float: left; 
+        min-height: 1px; 
+        width: 16.66%; 
+        /*-- our gutter -- */
+        padding: 12px; 
+        /*background-color: #FFDCDC;*/
+    }
+
+    .col-1{ width: 16.66%; }
+    .col-2{ width: 33.33%; }
+    .col-3{ width: 50%;    }
+    .col-4{ width: 66.66%; }
+    .col-5{ width: 83.33%; }
+    .col-6{ width: 100%;   }
+
+    .outline, .outline *{
+        outline: 1px solid #F6A1A1; 
+    }
+
+    /*-- some extra column content styling --*/
+    [class*='col-'] > p {
+     background-color: #FFC2C2; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
+
+    header{
+		padding: 20px 0px;
+		position: relative;
+		background-color: #FFF;
+		height: 175px;
+		z-index: 2;
+		box-shadow:0 0px 6px 0 rgba(32,33,36,0.28);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4965b2+1,455db2+33,044993+100 */
+		background: rgb(73,101,178); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover, rgba(73,101,178,1) 1%, rgba(69,93,178,1) 33%, rgba(4,73,147,1) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(73,101,178,1) 1%,rgba(69,93,178,1) 33%,rgba(4,73,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center, rgba(73,101,178,1) 1%,rgba(69,93,178,1) 33%,rgba(4,73,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4965b2', endColorstr='#044993',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	nav{
+		text-align: center;
+		margin: 20px 0;
+	}
+	nav a.nav-logo{
+		position: relative;
+		text-decoration: none;
+		margin: 0px auto;
+		display: inline-block;
+		font: sans-serif;
+		font-size: 30px;
+		color: inherit;
+	}
+	span.name{
+		font-size: 35px;
+		color:  white;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.icon{
+		/*display: block;
+		float: left;*/
+		border-radius: 50%;
+		border-color: #aa1e17;
+		border-style: solid;
+		border-width: 10px;
+		box-shadow: 0 0px 25px 0 rgba(32,33,36,0.28);
+	}
+	ul.navbar{
+		position: relative;
+		display: block;
+		text-align: center;
+		height: 60px;
+		background-color: #152247;
+		box-shadow: 0 0px 10px 0 rgba(32,33,36,0.28);
+	}
+	ul.navbar li{
+		list-style-type: none;
+		padding: 10px 25px;
+		 height: inherit;
+		 color: white;
+		 transition: all 0.035s ease-in-out;
+		 border-bottom: :2px solid transparent;
+		 -moz-transition: all 0.035s ease-in-out;
+		font-size: 13px;
+		text-transform: uppercase;
+		line-height: 4.5;
+		display: inline;
+	}
+	ul.navbar li:hover{
+		border-bottom: 2px solid white;
+	}
+	ul.navbar li a{
+		color: inherit;
+	 	text-decoration: none;
+	 }
+</style>
+<body>
+
+		<header>
+			<nav>
+				<a href="" class="nav-logo">
+					<span class="name">PRINCE</span>
+					<img class="icon" src="anchor.jpg" height="100" width="100">
+					<span class="name">SHIPPING</span>
+
+				</a>
+				
+			</nav>
+			<ul class="navbar">
+						<li><a href="">Home</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">About</a></li>
+				</ul>
+		</header>
+
+		<main class="grid-container">
+			<div class="row">
+				
+
+			</div>
+			
+		</main>
+
+		<footer>
+			
+		</footer>
+
+</body>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet"> 
+</html>
