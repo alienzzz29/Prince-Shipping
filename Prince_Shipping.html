@@ -163,14 +163,27 @@
 	 	text-decoration: none;
 	 }
 	 main .first{
-		/*background-color: rgb(73,101,178);*/
-		background-color: white;
+		background-color: rgb(73,101,178);
+		/*background-color: white;*/
+		
+		background-image: url('ocean.jpg');
+		background-position: 50%;
 		height: 500px;
 		padding: 100px 0;
+		z-index: 1;
+		position: relative;
 	 }
 	 main .second{
-		background-color: #fafafa;
+		background-color: rgb(73,101,178);
 		height: 450px;
+		position: relative;
+		box-shadow: 0px 1px 30px -5px #1b1b1b, 0px -1px 30px -5px #152247;
+		z-index: 3;
+		background: -moz-radial-gradient(center, ellipse cover, rgba(73,101,178,1) 1%, rgba(69,93,178,1) 33%, rgba(4,73,147,1) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(73,101,178,1) 1%,rgba(69,93,178,1) 33%,rgba(4,73,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center, rgba(73,101,178,1) 1%,rgba(69,93,178,1) 33%,rgba(4,73,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4965b2', endColorstr='#044993',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		padding: 100px 0;
 	 }
 	main .grid-container{
 		height: inherit;
@@ -186,10 +199,13 @@
 	main .ship img{
 		height: inherit;
 		width: auto;
+		filter:drop-shadow(0px 7px 8px #343434);
+		z-index: 3;
 	}
 	 main .third{
 		background-color: white;
 		height: 450px;
+		position: relative;
 	 }
 </style>
 <body>
@@ -221,7 +237,7 @@
 					</section>
 					<section class="col-3">
 							<h2>Welcome to Prince Shipping</h2>
-							<h3>The Best Shipping line in the Philippines, we ship from Luzon to Visayas to Mindanao</h3>
+							<h3>The Best Shipping line in the Philippines, we ship from Luzon to Visayas and, more importantly, Mindanao!</h3>
 					</section>
 
 				</div>
